@@ -1,3 +1,70 @@
+<img width="687" height="597" alt="1" src="https://github.com/user-attachments/assets/45d221ed-f875-40db-9bea-1b04ae358331" />## English
+# 🧠 SELL OUT & INVENTORY KKAA
+
+> **Power BI Business Intelligence Report**  
+> A data-driven analysis of Key Account (KKAA) sales and inventory performance (Sell out level).
+
+---
+
+## 🗂️ Project Overview
+This project presents a detailed overview of **Key Account (KKAA) clients**, highlighting:
+- **Sell-out sales performance** (MTD & YTD)
+- **Inventory levels and coverage**
+- **Growth vs. previous year**
+- **Insights per client and product line**
+
+---
+
+## 📊 Preview
+![Report Preview](pdf)!(./SellOuteInventario_KKAA.pdf)
+
+> *Add a screenshot of your Power BI report and rename it “preview.png”.*
+
+---
+
+## 🧮 Main DAX Measures
+- `Sell Out MTD`  
+- `Sell Out MTD LY`  
+- `Sell Out MTD Growth`  
+- `% Sell Out MTD Growth`
+
+> See the file (./MEDIDAS DAX.md) for details.
+
+---
+
+## 🧰 Tools & Technologies
+| Tool | Purpose |
+|------|----------|
+| **Power BI Desktop (Sept 2025)** | Report creation |
+| **DAX Studio** | Measure validation |
+| **SQL Server** | Data source |
+| **GitHub** | Version control |
+
+---
+
+## 🗃️ Data Sources
+- Internal **OLAP Cubes**
+- Extracted and modeled in **Power Query**
+
+---
+
+## 📄 Report File
+📥 [Download Report (PDF)]![Vista principal](./SellOuteInventario_KKAA.pdf)
+
+---
+
+## 💬 Author
+**Bryan Odair Orellana Chávez**  
+Business Intelligence & Data Analysis  
+📧 [Contact me on LinkedIn](https://www.linkedin.com/in/bryanxavez)
+
+---
+
+## 🏷️ Tags
+`#PowerBI` `#DAX` `#BusinessIntelligence` `#DataAnalytics` `#SQLServer`
+
+---
+
 ## Spanish
 Saludos!
 
@@ -17,27 +84,5 @@ Reporte de Business Intelligence creado en Power BI para analizar el desempeño 
 ## PBIX
 !No se puede compartir dado que esta conectado a un cubo/SSAS
 
-## English
 
-Greetings!
-
-This project presents a summary of Key Account (KKAA) clients from my current company, providing a detailed overview of sales and inventory performance.
-It includes key insights such as average months of inventory, sell-out level sales, and comparisons with last year’s results (YTD) and current month versus last year (MTD).
-
-## SELL OUT & INVENTORY KKAA
-
-A Business Intelligence report built in Power BI to analyze monthly performance by product line and customer, as well as inventory levels.
-
-## Contents
-
--- **Main DAX Measures:** Sell Out MTD, Sell Out MTD LY, Sell Out MTD Growth, % Sell Out MTD Growth.
-
--- **Data Sources:** Internal OLAP cubes.
-
--- **Tools Used:** Power BI Desktop (September 2025), DAX Studio, SQL Server.
-
-![Vista principal](./SellOuteInventario_KKAA.pdf)
-
-## PBIX
-!Cannot share, is linked to an cube/SSAS
 
