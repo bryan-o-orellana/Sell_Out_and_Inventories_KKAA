@@ -12,7 +12,7 @@ Reporte de Business Intelligence creado en Power BI para analizar el desempeño 
 - **Herramientas usadas:** Power BI Desktop (septiembre 2025), DAX Studio, SQL Server.
 
 ## Vistas
-![Vista principal](SELL_OUT_E_INVENTARIOS_KKAA\SellOuteInventario_KKAA.pdf)
+![Vista principal](./SellOuteInventario_KKAA.pdf)
 
 ## PBIX
 !No se puede compartir dado que esta conectado a un cubo/SSAS
@@ -24,16 +24,20 @@ Greetings!
 This project presents a summary of Key Account (KKAA) clients from my current company, providing a detailed overview of sales and inventory performance.
 It includes key insights such as average months of inventory, sell-out level sales, and comparisons with last year’s results (YTD) and current month versus last year (MTD).
 
-SELL OUT & INVENTORY KKAA
+## SELL OUT & INVENTORY KKAA
 
 A Business Intelligence report built in Power BI to analyze monthly performance by product line and customer, as well as inventory levels.
 
-Contents
+## Contents
 
-Main DAX Measures: Sell Out MTD, Sell Out MTD LY, Sell Out MTD Growth, % Sell Out MTD Growth.
+-- **Main DAX Measures:** Sell Out MTD, Sell Out MTD LY, Sell Out MTD Growth, % Sell Out MTD Growth.
 
-Data Sources: Internal OLAP cubes.
+-- **Data Sources:** Internal OLAP cubes.
 
-Tools Used: Power BI Desktop (September 2025), DAX Studio, SQL Server.
+-- **Tools Used:** Power BI Desktop (September 2025), DAX Studio, SQL Server.
 
-![Vista principal](SELL_OUT_E_INVENTARIOS_KKAA\SellOuteInventario_KKAA.pdf)
+![Vista principal](./SellOuteInventario_KKAA.pdf)
+
+## PBIX
+!Cannot share, is linked to an cube/SSAS
+
