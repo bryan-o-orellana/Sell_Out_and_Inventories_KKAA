@@ -18,6 +18,10 @@ VAR _resultado =
     )
 RETURN 
     _resultado
+---
+
+## 📆 2️⃣ Sell Out MTD LY
+
 Sell Out MTD LY =
 VAR _maxFechaContext = MIN( MAX( DimFechas[Fecha] ), TODAY() )
 VAR _dia = DAY( _maxFechaContext )
@@ -36,13 +40,20 @@ CALCULATE(
         DimFechas[Fecha] <= _endLY
     )
 )
+
+## 📊 3️⃣ Crecimiento Sell Out MTD
+
 Crecimiento Sell Out MTD = 
 [Sell Out MTD] - [Sell Out MTD LY]
+
+## 📈 4️⃣ % Crecimiento Sell Out MTD 
 % Crecimiento Sell Out MTD = 
 DIVIDE(
     [Sell Out MTD] - [Sell Out MTD LY],
     [Sell Out MTD LY]
 )
+
+## 🗓️ 5️⃣ MesMTDCalculos
 MesMTDCalculos = 
 VALUE( MONTH( [MaxFechaCalculos] ) )
 
@@ -57,3 +68,4 @@ Make sure the date table (DimFechas) is properly marked as a Date Table in Power
 
 📘 Author: Bryan O. Orellana Chávez
 📅 Last Updated: October 2025
+
