@@ -1,13 +1,9 @@
-# 📊 DAX Measures — Sell Out & Inventory KKAA
+//---------------------------------------------//
+// ⚙️ POWER BI DAX MEASURES
+// Sell Out & Inventory KKAA Report
+//---------------------------------------------//
 
-A collection of DAX measures used to calculate **Sell Out MTD performance** and **growth vs. last year** in the Power BI report.
-
----
-
-## 1️⃣ Sell Out MTD
-Calculates the **month-to-date (MTD)** sales up to the current day of the month.
-
-```DAX
+// 1️⃣ Sell Out MTD
 Sell Out MTD = 
 VAR _diaMes = [DiasTranscurridos]
 VAR _mesActual = [MesMTDCalculos]
@@ -20,6 +16,10 @@ VAR _resultado =
 RETURN 
     _resultado
 
+
+//---------------------------------------------//
+// 2️⃣ Sell Out MTD LY
+//---------------------------------------------//
 Sell Out MTD LY =
 VAR _maxFechaContext = MIN( MAX( DimFechas[Fecha] ), TODAY() )
 VAR _dia = DAY( _maxFechaContext )
@@ -39,15 +39,39 @@ CALCULATE(
     )
 )
 
+
+//---------------------------------------------//
+// 3️⃣ Crecimiento Sell Out MTD
+//---------------------------------------------//
 Crecimiento Sell Out MTD = 
 [Sell Out MTD] - [Sell Out MTD LY]
 
+
+//---------------------------------------------//
+// 4️⃣ % Crecimiento Sell Out MTD
+//---------------------------------------------//
 % Crecimiento Sell Out MTD = 
 DIVIDE(
     [Sell Out MTD] - [Sell Out MTD LY],
     [Sell Out MTD LY]
 )
 
-MesMTDCalculos = VALUE(MONTH([MaxFechaCalculos]))
+
+//---------------------------------------------//
+// 5️⃣ MesMTDCalculos
+//---------------------------------------------//
+MesMTDCalculos = 
+VALUE( MONTH( [MaxFechaCalculos] ) )
+
+//---------------------------------------------//
+// 🧩 Notes
+// - Measures designed for monthly comparisons (MTD)
+// - Uses DimFechas[Fecha], [MaxFechaCalculos], [Total Sell Out]
+// - Ensure DimFechas is marked as a Date Table
+//---------------------------------------------//
+
+// 📘 Author: Bryan O. Orellana Chávez
+// 📅 Last Updated: October 2025
+
 
 
