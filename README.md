@@ -47,7 +47,7 @@ This project presents a detailed overview of **Key Account (KKAA) clients**, hig
 ---
 
 ## 📄 Report File
-📥 [Download Report (PDF)]![Full report - 5 pages](./SellOuteInventario_KKAA.pdf)
+📥 [Download Report (PDF)]![Full report - 5 pages](./Sell_Out_Inventories_KKAA/SellOuteInventario_KKAA.pdf)
 
 ---
 
