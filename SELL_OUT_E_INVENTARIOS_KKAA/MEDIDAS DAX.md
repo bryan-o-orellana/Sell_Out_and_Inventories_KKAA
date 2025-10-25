@@ -20,4 +20,34 @@ VAR _resultado =
 RETURN 
     _resultado
 
+Sell Out MTD LY =
+VAR _maxFechaContext = MIN( MAX( DimFechas[Fecha] ), TODAY() )
+VAR _dia = DAY( _maxFechaContext )
+VAR _mes = MONTH( _maxFechaContext )
+VAR _anioAnterior = YEAR( _maxFechaContext ) - 1
+
+VAR _startLY = DATE( _anioAnterior, _mes, 1 )
+VAR _endLY = DATE( _anioAnterior, _mes, _dia )
+
+RETURN
+CALCULATE(
+    [Total Sell Out],
+    FILTER(
+        ALL( DimFechas ),
+        DimFechas[Fecha] >= _startLY &&
+        DimFechas[Fecha] <= _endLY
+    )
+)
+
+Crecimiento Sell Out MTD = 
+[Sell Out MTD] - [Sell Out MTD LY]
+
+% Crecimiento Sell Out MTD = 
+DIVIDE(
+    [Sell Out MTD] - [Sell Out MTD LY],
+    [Sell Out MTD LY]
+)
+
+MesMTDCalculos = VALUE(MONTH([MaxFechaCalculos]))
+
 
