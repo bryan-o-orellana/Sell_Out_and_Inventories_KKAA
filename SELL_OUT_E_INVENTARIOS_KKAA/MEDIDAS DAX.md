@@ -4,9 +4,8 @@ This document contains key DAX measures used in the **Sell Out Report** for perf
 
 ---
 
-## 📅 1️⃣ Sell Out MTD
-
 ```DAX
+## 📅 1️⃣ Sell Out MTD
 Sell Out MTD = 
 VAR _diaMes = [DiasTranscurridos]
 VAR _mesActual = [MesMTDCalculos]
@@ -68,4 +67,5 @@ Make sure the date table (DimFechas) is properly marked as a Date Table in Power
 
 📘 Author: Bryan O. Orellana Chávez
 📅 Last Updated: October 2025
+
 
