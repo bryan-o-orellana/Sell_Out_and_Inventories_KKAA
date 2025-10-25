@@ -19,12 +19,11 @@ This project presents a detailed overview of **Key Account (KKAA) clients**, hig
 The repository is organized as follows:
 
 /SELL_OUT_E_INVENTARIOS_KKAA
-│
-├── 📄 README.md # Detailed description of the BI report
-├── 📘 MEDIDAS DAX.md # All DAX measures used in the report
-├── 📊 SellOuteInventario_KKAA.pdf # Full Power BI report exported to PDF (5 pages)
-├── 🖼️ Preview.png # Report visual preview for quick reference
-├── 🔗 Tablas relacionadas.png # Schema of related tables (data model)
+ **📄 README.md** # Detailed description of the BI report
+ **📘 MEDIDAS DAX.md** # All DAX measures used in the report
+ **📊 SellOuteInventario_KKAA.pdf** # Full Power BI report exported to PDF (5 pages)
+ **🖼️ Preview.png** # Report visual preview for quick reference
+ **🔗 Tablas relacionadas.png** # Schema of related tables (data model)
 
 Each file provides specific documentation or visual reference for the **Sell Out & Inventory KKAA** Business Intelligence project.
 
