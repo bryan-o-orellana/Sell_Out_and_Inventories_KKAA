@@ -1,6 +1,4 @@
 
-### English
----
 ## 🧠 SELL OUT & INVENTORY KKAA
 
 > **Power BI Business Intelligence Report**  
@@ -62,29 +60,3 @@ Business Intelligence & Data Analysis
 
 ## 🏷️ Tags
 `#PowerBI` `#DAX` `#BusinessIntelligence` `#DataAnalytics` `#SQLServer`
-
----
-
-## Spanish
-Saludos!
-
-El siguiente proyecto muestra un resumen de clientes cuentas clave (KKAA) de mi actual empresa, dando un resumen pormenorizado de ventas e inventario. Arrojando datos relevantes como meses de inventario promedio, ventas a nivel sell out, y comparaciones de estas ventas con el año pasado (YTD) y del mes actual con respecto al año pasado (MTD).
-
-# SELL OUT E INVENTARIO KKAA
-Reporte de Business Intelligence creado en Power BI para analizar el desempeño mensual por linea de producto y cliente, asi como inventarios.
-
-## Contenido
-- **Medidas DAX principales:** Sell Out MTD, Sell Out MTD LY, Crecimiento Sell Out MTD, % Crecimiento Sell Out MTD.
-- **Fuentes de datos:** cubos OLAP internos.
-- **Herramientas usadas:** Power BI Desktop (septiembre 2025), DAX Studio, SQL Server.
-
-## Vistas
-![Reporte completo - 5 paginas](./SellOuteInventario_KKAA.pdf)
-
-## PBIX
-!No se puede compartir dado que esta conectado a un cubo/SSAS
-
-
-
-
-
