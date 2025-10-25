@@ -1,9 +1,12 @@
-//---------------------------------------------//
-// ⚙️ POWER BI DAX MEASURES
-// Sell Out & Inventory KKAA Report
-//---------------------------------------------//
+# ⚙️ Power BI DAX Measures
 
-// 1️⃣ Sell Out MTD
+This document contains key DAX measures used in the **Sell Out Report** for performance tracking and monthly comparisons.
+
+---
+
+## 📅 1️⃣ Sell Out MTD
+
+```DAX
 Sell Out MTD = 
 VAR _diaMes = [DiasTranscurridos]
 VAR _mesActual = [MesMTDCalculos]
@@ -15,11 +18,6 @@ VAR _resultado =
     )
 RETURN 
     _resultado
-
-
-//---------------------------------------------//
-// 2️⃣ Sell Out MTD LY
-//---------------------------------------------//
 Sell Out MTD LY =
 VAR _maxFechaContext = MIN( MAX( DimFechas[Fecha] ), TODAY() )
 VAR _dia = DAY( _maxFechaContext )
@@ -38,40 +36,24 @@ CALCULATE(
         DimFechas[Fecha] <= _endLY
     )
 )
-
-
-//---------------------------------------------//
-// 3️⃣ Crecimiento Sell Out MTD
-//---------------------------------------------//
 Crecimiento Sell Out MTD = 
 [Sell Out MTD] - [Sell Out MTD LY]
-
-
-//---------------------------------------------//
-// 4️⃣ % Crecimiento Sell Out MTD
-//---------------------------------------------//
 % Crecimiento Sell Out MTD = 
 DIVIDE(
     [Sell Out MTD] - [Sell Out MTD LY],
     [Sell Out MTD LY]
 )
-
-
-//---------------------------------------------//
-// 5️⃣ MesMTDCalculos
-//---------------------------------------------//
 MesMTDCalculos = 
 VALUE( MONTH( [MaxFechaCalculos] ) )
 
-//---------------------------------------------//
-// 🧩 Notes
-// - Measures designed for monthly comparisons (MTD)
-// - Uses DimFechas[Fecha], [MaxFechaCalculos], [Total Sell Out]
-// - Ensure DimFechas is marked as a Date Table
-//---------------------------------------------//
+>>------------------
+🧩 Notes
 
-// 📘 Author: Bryan O. Orellana Chávez
-// 📅 Last Updated: October 2025
+These measures are designed for monthly comparisons (MTD) in Power BI.
 
+They rely on supporting fields like DimFechas[Fecha], [MaxFechaCalculos], and [Total Sell Out].
 
+Make sure the date table (DimFechas) is properly marked as a Date Table in Power BI for time intelligence to work correctly.
 
+📘 Author: Bryan O. Orellana Chávez
+📅 Last Updated: October 2025
