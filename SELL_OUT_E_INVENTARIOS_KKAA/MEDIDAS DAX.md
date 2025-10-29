@@ -4,7 +4,6 @@ This document contains key DAX measures used in the **Sell Out Report** for perf
 
 ---
 
-```DAX
 ## 📅 1️⃣ Sell Out MTD
 Sell Out MTD = 
 VAR _diaMes = [DiasTranscurridos]
@@ -17,7 +16,6 @@ VAR _resultado =
     )
 RETURN 
     _resultado
----
 
 ## 📆 2️⃣ Sell Out MTD LY
 
@@ -65,7 +63,13 @@ They rely on supporting fields like DimFechas[Fecha], [MaxFechaCalculos], and [T
 
 Make sure the date table (DimFechas) is properly marked as a Date Table in Power BI for time intelligence to work correctly.
 
+## License / Disclaimer
+
+This project is intended for internal professional use. Data and full model structures are confidential and proprietary to the company Intermoda .S.A.
+
 📘 Author: Bryan O. Orellana Chávez
 📅 Last Updated: October 2025
+
+
 
 
