@@ -1,7 +1,7 @@
 
 ## 🧠 SELL OUT & INVENTORY KKAA
 
-> **Power BI Business Intelligence Report**  
+> **Power BI Business Intelligence Report for Intermoda S.A.**  
 > A data-driven analysis of Key Account (KKAA) sales and inventory performance (Sell out level).
 
 ---
