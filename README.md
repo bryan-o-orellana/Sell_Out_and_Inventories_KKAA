@@ -71,6 +71,10 @@ Business Intelligence & Data Analysis
 
 ---
 
+License / Disclaimer
+
+This project is intended for internal professional use. Data and full model structures are confidential and proprietary to the company Intermoda .S.A.
+
 ## 🏷️ Tags
 `#PowerBI` `#DAX` `#BusinessIntelligence` `#DataAnalytics` `#SQLServer`
 
